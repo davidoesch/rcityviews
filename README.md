@@ -35,6 +35,12 @@ After installation, you can load the package into the `R` session using:
 library(rcityviews)
 ```
 
+Since overpass API is often overloaded, try alternative servers https://wiki.openstreetmap.org/wiki/Overpass_API using eg:
+
+```r
+osmdata::set_overpass_url("https://lz4.overpass-api.de/api/interpreter")
+```
+
 ## Create your own in R
 
 ### Finding a city name in the database
